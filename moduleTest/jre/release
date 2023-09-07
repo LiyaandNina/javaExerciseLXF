@@ -1,0 +1,2 @@
+JAVA_VERSION="19.0.2"
+MODULES="java.base java.xml moduleTest"

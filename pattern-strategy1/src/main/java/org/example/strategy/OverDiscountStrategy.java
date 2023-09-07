@@ -1,0 +1,10 @@
+package org.example.strategy;
+
+import java.math.BigDecimal;
+
+public class OverDiscountStrategy implements DiscountStrategy {
+    @Override
+    public BigDecimal getDiscount(BigDecimal total) {
+        return total.compareTo(new BigDecimal(100)) > 0 ? new BigDecimal(20) : BigDecimal.ZERO;
+    }
+}
