@@ -63,7 +63,7 @@ public class UserService {
                     rs.getString("password"),
                     rs.getString("name")
             );
-        }, email);
+        }, new Object[]{email});
     }
 
     public long getUsers() {
