@@ -12,8 +12,8 @@ public class ReviewO {
                  .filter(n -> n % 2 != 0);
 //                 .forEach(System.out::println);
         Stream<LocalDate> stream = Stream.generate(new LocalDateSupplier());
-        stream.limit(30)
-              .filter(date -> date.getDayOfWeek() == DayOfWeek.SATURDAY || date.getDayOfWeek() == DayOfWeek.SUNDAY)
+        stream.filter(date -> date.getDayOfWeek() == DayOfWeek.SATURDAY || date.getDayOfWeek() == DayOfWeek.SUNDAY)
+              .limit(30)
               .forEach(System.out::println);
     }
 }
