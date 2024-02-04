@@ -36,5 +36,6 @@ public class ReviewU {
                 Arrays.asList(4, 5, 6),
                 Arrays.asList(7, 8, 9));
         Stream<Integer> stream1 = s.flatMap(x -> x.stream());
+        stream1.forEach(System.out::print);
     }
 }
